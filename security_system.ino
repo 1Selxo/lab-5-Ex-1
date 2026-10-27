@@ -57,6 +57,7 @@ String lastL2 = "";
 
 void setup() {
   Serial.begin(9600);
+  Serial.println("Basel - Mechatronics System Integration Lab 5 Ex 1");
   pinMode(magneticSwitchPin, INPUT_PULLUP);
   pinMode(pirPin, INPUT);
   pinMode(buzzerPin, OUTPUT);
@@ -68,7 +69,7 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
-  lcd.print("Security sys 1.0");
+  lcd.print("Basel - Sec Sys");
   lcd.setCursor(0, 1);
   lcd.print("System Ready");
   delay(1500);
